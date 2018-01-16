@@ -1,6 +1,5 @@
 <nav class="navbar navbar-default navbar-custom">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -12,10 +11,7 @@
         <img class="brand" alt="Brand" src="https://d1gtvyuysab6gw.cloudfront.net/assets/caredash-logo-official-a122691e52b2f17c2083929963e1f288de8bf447e9de424017dc35f32b11d5fb.svg">
       </a>
     </div>
-
-
     <div class="collapse navbar-right navbar-collapse" id="bs-example-navbar-collapse-1">
-
       <form class="navbar-form navbar-right">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search Provider Name">
@@ -23,7 +19,6 @@
         <button type="submit" class="btn btn-default">Search</button>
       </form>
       <ul class="nav navbar-nav">
-
         <div class="dropdown">
           <button onclick="myFunction()" class="dropbtn">Other <span class="caret"></span></button>
           <div id="myDropdown" class="dropdown-content">
@@ -35,45 +30,33 @@
         <li><a href="#">Review Your Doctor</a></li>
         <li><a href="#">Find a Doctor</a></li>
       </ul>
-
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
 
-
-<div class="body">
-
-
 <div class="row sign">
-
   <div class="col-sm-12 col-md-8">
     <img class="stock" src="https://assets3.bigthink.com/system/idea_thumbnails/58247/size_1024/smiling_female_doctor.jpg?1426030321">
   </div>
 
-  <div class="col-sm-6 col-md-4 signed" id=signup>
-      <div class="signup">
-        <h4>Sign up with CareDash to </br> Edit your Provider Profile</h4>
-        <h5><b> First Name </b><input type="text"</h5>
-        <h5><b> Last Name </b><input type="text"</h5>
-        <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-          <%= devise_error_messages! %>
-          <div><h5><%= f.label :email_address %>
-          <%= f.email_field :email %></h5></div>
-          <div><h5><%= f.label :password %>
-          <%= f.password_field :password %></h5></div>
-          <div><h5><%= f.label :confirm_password %>
-          <%= f.password_field :password_confirmation %></h5></div>
-          <div><p><%= f.submit "Sign up ", class: "btn btn-large btn-success"%> <a href="#" class="btn btn-success" role="button">Log In</a></p></div>
-          <% end %>
-      </div>
+<div class="col-sm-6 col-md-4 signed" id=signup>
+  <div class="signup">
+    <h4>Sign up with CareDash to </br> Edit your Provider Profile</h4>
+    <h5><b> First Name </b><input type="text"</h5>
+    <h5><b> Last Name </b><input type="text"</h5>
+    <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+      <%= devise_error_messages! %>
+      <div><h5><%= f.label :email_address %>
+      <%= f.email_field :email %></h5></div>
+      <div><h5><%= f.label :password %>
+      <%= f.password_field :password %></h5></div>
+      <div><h5><%= f.label :confirm_password %>
+      <%= f.password_field :password_confirmation %></h5></div>
+      <div><p><%= f.submit "Sign up ", class: "btn btn-large btn-success"%> <a href="#" class="btn btn-success" role="button">Log In</a></p></div>
+      <% end %>
     </div>
   </div>
-
 </div>
-
-
-
-
 
 <div class="row reasons">
   <h2> Reasons to Sign Up as a Provider on CareDash </h2>
@@ -108,7 +91,6 @@
     </div>
   </div>
 </div>
-
 </div>
 
 <footer>
