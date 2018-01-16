@@ -6,7 +6,7 @@ I designed and implemented a functional website using ruby on rails. All buttons
 
 Please clone or download this repo and run the rails app on your local host.
 
-I have included pictures of the website in case there is a problem. Please do not hesitate to contact me with further questions.
+I have included pictures of the website as attachments in the email. Please do not hesitate to contact me with further questions.
 
 Best,
 Dana Chung
