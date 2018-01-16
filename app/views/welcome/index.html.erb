@@ -1,0 +1,139 @@
+<nav class="navbar navbar-default navbar-custom">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img class="brand" alt="Brand" src="https://d1gtvyuysab6gw.cloudfront.net/assets/caredash-logo-official-a122691e52b2f17c2083929963e1f288de8bf447e9de424017dc35f32b11d5fb.svg">
+      </a>
+    </div>
+
+
+    <div class="collapse navbar-right navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <form class="navbar-form navbar-right">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search Provider Name">
+        </div>
+        <button type="submit" class="btn btn-default">Search</button>
+      </form>
+      <ul class="nav navbar-nav">
+
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Other <span class="caret"></span></button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Health 101</a>
+            <a href="#">Living Well</a>
+            <a href="#">Family</a>
+          </div>
+        </div>
+        <li><a href="#">Review Your Doctor</a></li>
+        <li><a href="#">Find a Doctor</a></li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="body">
+
+
+<div class="row sign">
+
+  <div class="col-sm-12 col-md-8">
+    <img class="stock" src="https://assets3.bigthink.com/system/idea_thumbnails/58247/size_1024/smiling_female_doctor.jpg?1426030321">
+  </div>
+
+  <div class="col-sm-6 col-md-4 signed" id=signup>
+      <div class="signup">
+        <h4>Sign up with CareDash to </br> Edit your Provider Profile</h4>
+        <h5><b> First Name </b><input type="text"</h5>
+        <h5><b> Last Name </b><input type="text"</h5>
+        <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+          <%= devise_error_messages! %>
+          <div><h5><%= f.label :email_address %>
+          <%= f.email_field :email %></h5></div>
+          <div><h5><%= f.label :password %>
+          <%= f.password_field :password %></h5></div>
+          <div><h5><%= f.label :confirm_password %>
+          <%= f.password_field :password_confirmation %></h5></div>
+          <div><p><%= f.submit "Sign up ", class: "btn btn-large btn-success"%> <a href="#" class="btn btn-success" role="button">Log In</a></p></div>
+          <% end %>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="row reasons">
+  <h2> Reasons to Sign Up as a Provider on CareDash </h2>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/27715-200.png" style="width: 10rem; padding-top: 3rem;">
+      <div class="caption">
+        <h3>Claim your profile</h3>
+        <p>Claiming your profile allows you to add additional content to encourage patients and keep them up to date. When you sign in you are able to add a biography, care philosophy, advice for your patients, and a short summary about you. By filling up your profile, you're providing patients with up to date information that helps them feel confident in choosing you.</p>
+        <p><a href="#" class="btn btn-success" role="button">Learn More</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://image.freepik.com/free-icon/medical-doctor-specialist_318-61706.jpg" style="width: 10rem; padding-top: 3rem;">
+      <div class="caption">
+        <h3>Respond to Reviews</h3>
+        <p>CareDash allows healthcare providers to respond to reviews written about their practices. Please make sure the response is written as you wish to see it posted on our site and make sure to review the Healthcare Provider Response Guidelines before submitting the response. To submit a response, please email support@caredash.com.</p>
+        <p><a href="#" class="btn btn-success" role="button">Learn More</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://cdn1.iconfinder.com/data/icons/health-care-medical/64/1-10-512.png" style="width: 10rem; padding-top: 3rem;">
+      <div class="caption">
+        <h3>Update information</h3>
+        <p>Providers are welcome to claim their CareDash profiles by signing up for the CareDash Provider Portal. Once you sign up and confirm your email address, you can make edits to your profile while you await verification. Once in the portal, you can update existing information and add more to your profile such as a biography, care philosophy, and social media links.</p>
+        <p><a href="#" class="btn btn-success" role="button">Learn More</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<footer>
+  <div class="row">
+    <div class="col-sm-4">
+      <h4>Care Dash</h4>
+      <a href="#">Home</a></br>
+      <a href="#">About</a></br>
+      <a href="#">Contact</a></br>
+      <a href="#">Write a Review</a>
+    </div>
+    <div class="col-sm-4">
+      <h4>Specialists</h4>
+      <a href="#">Primary Care Physicians</a></br>
+      <a href="#">Pediatricians</a></br>
+      <a href="#">Optometrists</a></br>
+      <a href="#">Dentists</a>
+    </div>
+    <div class="col-sm-4">
+      <h4>Follow Us</h4>
+      <a href="http://www.facebook.com"><img src="https://png.icons8.com/metro/540/facebook.png" style="width: 3rem;"></a>
+      <a href="http://www.twitter.com"><img src="https://image.flaticon.com/icons/png/512/8/8800.png" style="width: 3rem;"></a>
+      <a href="http://www.instagram.com"><img src="https://image.flaticon.com/icons/svg/61/61164.svg" style="width: 3rem;"></a>
+      <a href="http://www.pinterest.com"><img src="https://image.flaticon.com/icons/png/512/24/24193.png" style="width: 3rem;"></a>
+    </div>
+  </div>
+  <h5> Copyright 2018 CareDash </h5>
+</footer>
